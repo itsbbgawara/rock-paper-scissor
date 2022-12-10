@@ -8,42 +8,42 @@
     <title>Rock Paper Scissor</title>
 </head>
 <body>
-    <div class="container my-5">
+    <div class="container my-5 game">
         <div class="box has-background-white-ter">
             <p class="title is-2 has-text-centered has-text-weight-bold">Rock Paper Scissor</p>
-            <div class="columns is-centered pb-4 pt-4">
+            <div class="columns is-centered pb-4 pt-4 score">
                 <div class="column is-one-fifth">
                     <div class="notification is-info">
                         <p class="has-text-centered has-text-weight-semibold">Player</p>
-                        <p class="title is-4 has-text-centered has-text-weight-bold">3</p>
+                        <p class="title is-4 has-text-centered has-text-weight-bold player-count count">0</p>
                     </div>
                 </div>
                 <div class="column is-one-fifth">
                     <div class="notification is-warning">
                         <p class="has-text-centered has-text-weight-semibold">Computer</p>
-                        <p class="title is-4 has-text-centered has-text-weight-bold">3</p>
+                        <p class="title is-4 has-text-centered has-text-weight-bold  computer-count count">0</p>
                     </div>
                 </div>
             </div>
             <div class="games">
-                <p class="title is-3 has-text-centered has-text-weight-bold">Choose your move</p>
-                <p class="subtitle is-6 has-text-centered has-text-weight-bold">Moves left : 2</p>
+                <p class="title is-3 has-text-centered has-text-weight-bold move">Choose your move</p>
+                <p class="subtitle is-6 has-text-centered has-text-weight-bold movelefts">Moves left : 10</p>
 
-                <div class="columns is-centered">
+                <div class="columns is-centered options">
                     <div class="column is-half">
                         <div class="field is-grouped is-grouped-centered">
                             <p class="control">
-                                <button class="button is-link is-outlined">
+                                <button class="button is-link is-outlined rock">
                                     Rock
                                 </button>
                             </p>
                             <p class="control">
-                                <button class="button is-primary is-outlined">
+                                <button class="button is-primary is-outlined paper">
                                     Paper
                                 </button>
                             </p>
                             <p class="control">
-                                <button class="button is-danger is-outlined">
+                                <button class="button is-danger is-outlined scissor">
                                     Scissor
                                 </button>
                             </p>
@@ -51,12 +51,12 @@
                     </div>
                 </div>
 
-                <p class="subtitle is-6 has-text-centered has-text-weight-bold">Player Won</p>
+                <!--<p class="subtitle is-6 has-text-centered has-text-weight-bold">Player Won</p>
                 <p class="subtitle is-6 has-text-centered has-text-weight-bold">Computer Won</p>
-                <p class="subtitle is-6 has-text-centered has-text-weight-bold">Tie</p>
+                <p class="subtitle is-6 has-text-centered has-text-weight-bold">Tie</p>-->
             </div>
-            <div class="result pt-6">
-                <p class="title is-3 has-text-centered has-text-weight-bold">Game Over!!</p>
+            <div class="result">
+                <!--<p class="title is-3 has-text-centered has-text-weight-bold">Game Over!!</p>
                 <p class="subtitle is-6 has-text-centered has-text-weight-bold">You Won The Game!</p>
                 <div class="columns is-centered">
                     <div class="column is-half">
@@ -66,7 +66,20 @@
                             </button>
                         </p>
                     </div>
-                </div>
+                </div>-->
+            </div>
+            <div class="reload">
+                <!--<p class="title is-3 has-text-centered has-text-weight-bold">Game Over!!</p>
+                <p class="subtitle is-6 has-text-centered has-text-weight-bold">You Won The Game!</p>
+                <div class="columns is-centered">
+                    <div class="column is-half">
+                        <p class="control is-centered">
+                            <button class="button is-primary is-outlined is-fullwidth">
+                                Restart
+                            </button>
+                        </p>
+                    </div>
+                </div>-->
             </div>
         </div>
     </div>
