@@ -12,7 +12,6 @@ const game = () => {
 		
 		playerOptions.forEach(option => {
 			option.addEventListener('click',function(){
-
 				const movesLeft = document.querySelector('.movesleft');
 				moves++;
 				movesLeft.innerText = `Moves Left: ${10-moves}`;
@@ -43,7 +42,6 @@ const game = () => {
 				result.innerHTML = '<p class="subtitle is-5 has-text-centered has-text-info has-text-weight-semibold">Computer Won</p>';
 				computerScore++;
 				computerScoreBoard.textContent = computerScore;
-
 			}else{
 				result.innerHTML = '<p class="subtitle is-5 has-text-centered has-text-info has-text-weight-semibold">Player Won</p>';
 				playerScore++;
