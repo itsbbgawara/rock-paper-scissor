@@ -4,84 +4,72 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
-    <title>Rock Paper Scissor</title>
+    <link rel="stylesheet" href="./css/style.css">
+	<title>Rock Paper Scissor</title>
 </head>
 <body>
-    <div class="container my-5 game">
-        <div class="box has-background-white-ter">
-            <p class="title is-2 has-text-centered has-text-weight-bold">Rock Paper Scissor</p>
-            <div class="columns is-centered pb-4 pt-4 score">
-                <div class="column is-one-fifth">
-                    <div class="notification is-info">
-                        <p class="has-text-centered has-text-weight-semibold">Player</p>
-                        <p class="title is-4 has-text-centered has-text-weight-bold player-count count">0</p>
+    <div class="container pt-6">
+        <div class="box">
+            <section class="game">
+                <p class="title is-2 has-text-centered has-text-weight-bold">Rock Paper Scissor</p>
+                
+                <div class="score pt-4">
+                    <div class="columns is-centered">
+                        <div class="column is-one-fifth">
+                            <div class="playerScore notification is-info">
+                                <p class="has-text-centered has-text-weight-semibold">Player</p>
+                                <p class="p-count count title is-4 has-text-centered has-text-weight-bold">0</p>
+                            </div>	
+                        </div>
+                        <div class="column is-one-fifth">
+                            <div class="computerScore notification is-primary">
+                                <p class="has-text-centered has-text-weight-semibold">Computer</p>
+                                <p class="c-count count title is-4 has-text-centered has-text-weight-bold">0</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="column is-one-fifth">
-                    <div class="notification is-warning">
-                        <p class="has-text-centered has-text-weight-semibold">Computer</p>
-                        <p class="title is-4 has-text-centered has-text-weight-bold  computer-count count">0</p>
-                    </div>
+            
+                <div class="move pt-6">
+                    <p class="title is-3 has-text-centered has-text-weight-bold">Choose your move</p>
                 </div>
-            </div>
-            <div class="games">
-                <p class="title is-3 has-text-centered has-text-weight-bold move">Choose your move</p>
-                <p class="subtitle is-6 has-text-centered has-text-weight-bold movelefts">Moves left : 10</p>
-
-                <div class="columns is-centered options">
-                    <div class="column is-half">
-                        <div class="field is-grouped is-grouped-centered">
-                            <p class="control">
-                                <button class="button is-link is-outlined rock">
-                                    Rock
-                                </button>
-                            </p>
-                            <p class="control">
-                                <button class="button is-primary is-outlined paper">
-                                    Paper
-                                </button>
-                            </p>
-                            <p class="control">
-                                <button class="button is-danger is-outlined scissor">
-                                    Scissor
-                                </button>
-                            </p>
+                <div class="movesleft is-6 has-text-centered has-text-weight-bold pt-2">
+                    <p>Moves left : 10</p>
+                </div>
+                <p class="result pt-3"></p>
+                <div class="options pt-4">
+                    <div class="columns is-centered options">
+                        <div class="column is-half">
+                            <div class="field is-grouped is-grouped-centered">
+                                <p class="control">
+                                    <button class="button is-link is-outlined rock">
+                                        Rock
+                                    </button>
+                                </p>
+                                <p class="control">
+                                    <button class="button is-primary is-outlined paper">
+                                        Paper
+                                    </button>
+                                </p>
+                                <p class="control">
+                                    <button class="button is-danger is-outlined scissor">
+                                        Scissor
+                                    </button>
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                <!--<p class="subtitle is-6 has-text-centered has-text-weight-bold">Player Won</p>
-                <p class="subtitle is-6 has-text-centered has-text-weight-bold">Computer Won</p>
-                <p class="subtitle is-6 has-text-centered has-text-weight-bold">Tie</p>-->
-            </div>
-            <div class="result">
-                <!--<p class="title is-3 has-text-centered has-text-weight-bold">Game Over!!</p>
-                <p class="subtitle is-6 has-text-centered has-text-weight-bold">You Won The Game!</p>
                 <div class="columns is-centered">
-                    <div class="column is-half">
-                        <p class="control is-centered">
-                            <button class="button is-primary is-outlined is-fullwidth">
-                                Restart
-                            </button>
-                        </p>
+                    <div class="column is-one-fifth">
+                        <div class="reload"></div>
                     </div>
-                </div>-->
-            </div>
-            <div class="reload">
-                <!--<p class="title is-3 has-text-centered has-text-weight-bold">Game Over!!</p>
-                <p class="subtitle is-6 has-text-centered has-text-weight-bold">You Won The Game!</p>
-                <div class="columns is-centered">
-                    <div class="column is-half">
-                        <p class="control is-centered">
-                            <button class="button is-primary is-outlined is-fullwidth">
-                                Restart
-                            </button>
-                        </p>
-                    </div>
-                </div>-->
-            </div>
+                </div>
+            </section>
         </div>
     </div>
+
+	<script src="./js/app.js"></script>
 </body>
 </html>
